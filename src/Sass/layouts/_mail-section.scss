@@ -1,0 +1,142 @@
+.mail-section {
+    padding-left: 30px;
+    width: 100%;
+
+    .icon-container {
+        @include flexBox(flex-start,flex-start);
+
+        .oval {
+            width: 45px;
+            height: 45px;
+            margin: 33px 10px 30px 10px;
+            padding: 15px 10px 15px 12px;
+            border: solid 1px $grey-color-1;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            &:hover{
+                background-color: $dark-color;
+                border: solid 1px $violet-color;
+                transition: 0.2s;
+                path{
+                    transition: 0.2s;
+                    fill: $light-color;
+                }
+            }
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+               
+            }
+        }
+
+       
+    }
+
+    .content-line {
+        position: relative;
+        left: -29px;
+        margin-bottom: 30px;
+    }
+
+    .sub {
+        font-size: 24px;
+        font-weight: 300;
+        color: $black-light;
+        margin-bottom: 21px;
+    }
+
+    .profile-card {
+        @include flexBox( space-between,flex-start);
+        width: 90%;
+        margin-bottom: 20px;
+
+        .small-profile-details {
+           @include flexBox(flex-start,flex-start);
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+
+            .small-profile {
+                width: 45px;
+                height: 45px;
+                margin-right: 10px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .user-details {
+                .user-name {
+                    font-size: 18px;
+                    font-weight: normal;
+                    color: $black-light-1;
+                    margin-bottom: 2px;
+                }
+
+                .mail {
+                    font-size: 12px;
+                    color: $black-light;
+                }
+            }
+        }
+
+        .fetch-time {
+            margin-top: 15px;
+            font-size: 13px;
+            opacity: 0.5;
+        }
+    }
+
+    .line{
+        margin-bottom: 20px;
+    }
+    .data-content {
+        width: 511px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #65676e;
+        margin-bottom: 30px;
+    }
+    .file-container{
+        @include flexBox(flex-start,center);
+        width: 170px;
+        border: 1px solid #8e8e93;
+        padding: 14px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .file-icon{
+            margin-right: 10px;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+      
+        }  
+        .file-name{
+            color: #2e2e2e;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+    }
+    .btn-container {
+        position: relative;
+        margin-top: 50px;
+        display: inline-block;
+
+        .btn-icon {
+            position: absolute;
+            left: 20px;
+            top: 4px;
+            cursor: pointer;
+
+        }
+    }
+
+}

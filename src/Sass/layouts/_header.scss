@@ -1,0 +1,35 @@
+.navbar{
+    @include flexBox(flex-start,center);
+    background-color: $dark-blue;
+    padding: 25px 0;
+    position: relative;
+    width: 100%;
+    z-index: 2; 
+    position: fixed;
+    .dots{
+        @include flexBox(space-evenly,flex-start);
+        width: 100px;
+        .dot{
+            &:first-child{
+                @include dot($danger-color);
+            }
+            &:nth-child(2){
+                @include dot($warning-color);
+            }
+            &:last-child{
+                @include dot($success-color);
+            }
+        }
+    }
+    .logo{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        img{
+            width: 123.5px;
+            height: 40px;
+            object-fit: contain;
+        }
+    }
+
+}

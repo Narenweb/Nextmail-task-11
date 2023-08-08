@@ -1,0 +1,16 @@
+// Base imports
+@import '../base/reset';
+@import '../base/typography';
+
+//Utils imports
+@import '../utils/mixins';
+@import '../utils/variables';
+
+//Components imports
+@import '../components/button';
+
+//Layouts imports
+@import '../layouts/header';
+@import '../layouts/sideNavbar';
+@import '../layouts/inbox-section';
+@import '../layouts/mail-section';

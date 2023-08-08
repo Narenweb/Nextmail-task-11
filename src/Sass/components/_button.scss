@@ -1,0 +1,23 @@
+.primary-btn{
+    @include btn($green-color);
+    padding: 14px 18px 12px 30px;
+    &:hover{
+        box-shadow: 0 0 15px 0 rgba(7, 156, 95, 0.3);
+    }
+}
+.primary-btn-md{
+    @include btn($green-color);
+    padding: 14px 33px 12px 45px;
+    &:hover{
+        box-shadow: 0 0 15px 0 rgba(7, 156, 95, 0.3);
+    }
+}
+.secondary-btn{
+    @include btn(transparent);
+    padding: 14px 33px 12px 37px;
+    color: #999eb1;
+    border: 1px solid;
+    &:hover{
+        box-shadow: 0 0 15px 0 rgba(2, 15, 9, 0.3);
+    }
+}
